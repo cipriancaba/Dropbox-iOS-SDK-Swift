@@ -1,0 +1,5 @@
+ module DropboxSDK [system] {
+  2     header "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DropboxSDK.h"
+  3     link "DropboxSDK"
+  4     export *
+  5 }
