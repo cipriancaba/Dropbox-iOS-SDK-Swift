@@ -30,7 +30,7 @@ module DropboxSDK [system] {
     export *
 }
 MAP
-  CMD'
+  CMD',
   "module_map": "module.map",
   "xcconfig": {
     "FRAMEWORK_SEARCH_PATHS": "\"${PODS_ROOT}/Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.13\""
