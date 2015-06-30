@@ -11,6 +11,7 @@
     "ios": null
   },
   "source_files": "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/*.h",
+  "public_header_files": "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/*.h",
   "exclude_files": "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuth.h",
   "preserve_paths": "dropbox-ios-sdk-1.3.13/DropboxSDK.framework",
   "license": {
