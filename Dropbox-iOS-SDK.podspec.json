@@ -12,7 +12,7 @@
   },
   "source_files": "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/*.h",
   "exclude_files": "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuth.h",
-  "preserve_paths": ["dropbox-ios-sdk-1.3.13/DropboxSDK.framework", "module.map"],
+  "preserve_paths": ["dropbox-ios-sdk-1.3.13/DropboxSDK.framework", "generate_module_map.sh", "module.map"],
   "license": {
     "type": "Copyright",
     "file": "dropbox-ios-sdk-1.3.13/LICENSE"
@@ -22,7 +22,7 @@
     "QuartzCore",
     "DropboxSDK"
   ],
-  "prepare_command": '<<-CMD\n cat > "module.map" << MAP \n module DropboxSDK [system] { \n header "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DropboxSDK.h" \n link "DropboxSDK" \n export \n } \n MAP \n CMD',
+  "prepare_command": "generate_module_map.sh",
   "module_map": "module.map",
   "xcconfig": {
     "FRAMEWORK_SEARCH_PATHS": "\"${PODS_ROOT}/Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.13\""
