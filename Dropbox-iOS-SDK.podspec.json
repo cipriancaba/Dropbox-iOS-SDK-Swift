@@ -22,15 +22,7 @@
     "QuartzCore",
     "DropboxSDK"
   ],
-  "prepare_command": '<<-CMD
-    cat > "module.map" << MAP
-module DropboxSDK [system] {
-    header "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DropboxSDK.h"
-    link "DropboxSDK"
-    export *
-}
-MAP
-  CMD',
+  "prepare_command": '<<-CMD\n cat > "module.map" << MAP \n module DropboxSDK [system] { \n header "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DropboxSDK.h" \n link "DropboxSDK" \n export \n } \n MAP \n CMD',
   "module_map": "module.map",
   "xcconfig": {
     "FRAMEWORK_SEARCH_PATHS": "\"${PODS_ROOT}/Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.13\""
