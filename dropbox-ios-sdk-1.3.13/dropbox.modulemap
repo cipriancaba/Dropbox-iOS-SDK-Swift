@@ -1,0 +1,6 @@
+framework module Dropbox {
+  umbrella header "DropboxSDK.framework/Headers/DropboxSDK.h"
+
+  export *
+  module * { export * }
+}
